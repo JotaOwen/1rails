@@ -1,0 +1,41 @@
+# SQLite version 3.x
+#   gem install sqlite3
+#
+#   Ensure the SQLite 3 gem is defined in your Gemfile
+#   gem 'sqlite3'
+#
+
+
+
+
+#grant all privileges on library_development.* to 'root'@'localhost' identified by 'realhost';
+
+#CREATE TABLE `site` (
+#  `id` int(11) NOT NULL AUTO_INCREMENT,
+#  `nombre` varchar(20) NOT NULL DEFAULT ''
+#  PRIMARY KEY (`id`)
+#) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+
+
+
+development:
+  adapter: mysql
+  database: library_development
+  username: root
+  password: realhost
+  host: localhost
+test:
+  adapter: mysql
+  database: library_test
+  username: root
+  password: realhost
+  host: localhost
+production:
+  adapter: mysql
+  database: library_production
+  username: root
+  password: realhost
+  host: 127.0.0.1
+
+
